@@ -2,6 +2,20 @@ sqs_cloud_watch_queue_count.py updates an AWS CloudWatch custom metric with an S
 
 This allows you to create custom alerts based on the queue's length such as adding more workers to handle the queues if the queue's size doesn't drop below a threashold for a certain period of time.
 
+
+REQUIREMENTS:
+=============
+* boto 2.0rc1 and above
+
+
+NOTES:
+======
+- AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY can also be read from the envrionment by variables with the same name
+- if -l (--log) is not set logging will not be printed 
+
+
+Usage:
+======
 Usage: sqs_cloudwatch_queue_count.py [options]
 
 AWS SQS queue status check command line tool
@@ -19,3 +33,6 @@ Options:
   -m METRIC_NAME, --metric_name=METRIC_NAME
                         The metric name
   -l LOG, --log=LOG     Location of the log file
+
+
+
