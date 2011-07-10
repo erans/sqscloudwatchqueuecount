@@ -1,7 +1,7 @@
 sqs_cloud_watch_queue_count.py updates an AWS CloudWatch custom metric with an SQS queue length.
 
 This allows you to create custom alerts based on the queue's length such as adding more workers to handle the queues if the queue's size doesn't drop below a threashold for a certain period of time.
-
+I'm using it in production via a cron job that runs every 1 minute.
 
 REQUIREMENTS:
 =============
